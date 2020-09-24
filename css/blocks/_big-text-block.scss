@@ -1,0 +1,12 @@
+.b-big-text-block {
+    display: block;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    padding-top: 18.5px;
+    height: 100.1%;
+    @media (min-width: $width-breakpoint) {
+        padding: 27.6px 50.4px 27.6px 27.5px;
+        font-size: 18.1121px;
+    }
+}

@@ -1,0 +1,91 @@
+@import 'variables';
+@import 'blocks/header-footer';
+@import 'blocks/small-blocks-group';
+@import 'blocks/big-blocks-group';
+@import 'blocks/big-text-block';
+@import 'blocks/questionnare';
+@import 'blocks/photo-block';
+
+/*Обнуление*/
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+	font-family: $roboto-font;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+
+.container {
+    min-width: $width-min;
+	max-width: $width-max;
+	margin: 0 auto;
+	font-size: $regular-font-size;
+}
+
+.main {
+	padding: 10px 0;
+	@media (min-width: $width-breakpoint) {
+        padding: 10px 12px 10px 13.4px;
+    }
+}
+
+.display320 {
+	display: flex;
+	@media (min-width: $width-breakpoint) {
+        display: none;
+    }
+}
+
+.display768 {
+	display: none;
+	@media (min-width: $width-breakpoint) {
+		display: flex;
+		
+    }
+}
+
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+   /* IE10 IE11 */
+   .main {
+		padding: 0;
+		@media (min-width: $width-breakpoint) {
+			padding: 0;
+		}
+   }
+
+   section {
+	@media (min-width: $width-breakpoint) {
+        padding: 0 12px 0 13.4px;
+    }  
+   }
+}
+

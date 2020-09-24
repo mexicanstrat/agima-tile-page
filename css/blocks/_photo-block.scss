@@ -1,0 +1,30 @@
+.hover-element {
+    display: none;
+    position: absolute;
+    font-size: 36px;
+    line-height: 42px;
+    width: 61px;
+    height: 61px;
+    left: 90px;
+    top: 336px;
+    background: #FFFFFF;
+    border-radius: 50%;
+    color: #F55E62;
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+.b-photo-block {
+    background-image: url(../img/ship.jpg);
+    color: $white-font-color;
+    cursor: pointer;
+    &:hover  {
+        filter: blur(3px)
+    }
+    &:hover + .hover-element {
+        display: block;
+    }
+}
+
+
+

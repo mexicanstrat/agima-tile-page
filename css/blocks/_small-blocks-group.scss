@@ -1,0 +1,86 @@
+.b-small-blocks-group {
+    &__triple {
+        @media (min-width: $width-breakpoint) {
+            width: 98.5%;
+        } 
+        &_margin {
+            @media (min-width: $width-breakpoint) {
+                margin-right: 10px;
+            } 
+        }
+    }
+    @media (min-width: $width-breakpoint) {
+        display: flex;
+    }
+    &__double {
+        @media (min-width: $width-breakpoint) {
+            width: 48.4%;
+        } 
+        &_margin {
+            @media (min-width: $width-breakpoint) {
+                margin-right: 10px;
+            } 
+        }
+    }
+    &__elements-wrap {
+        display: flex;
+        justify-content: space-between;
+        &_column {
+            @media (min-width: $width-breakpoint) {
+                flex-direction: column;
+            }
+        }
+    }
+    &__element {
+        height: 155px;
+        padding: 13px 15.2px;
+        width: 100%;
+        display: flex;
+        align-items: flex-end;
+        line-height: 19.5px;
+        overflow: hidden;
+        overflow-y: auto;
+        &_grey {
+            background-color: $first-small-blocks-group-color;
+        }
+        &_orange {
+            background-color: $second-small-blocks-group-color;
+        }
+        &_blue {
+            background-color: #90BCE8;
+        }
+        &_yellow {
+            background-color: #FEBF26;
+        }
+        &_purple {
+            background-color: #C7ABD4;
+        }
+        &_delicate-red {
+            background-color: #F55E62;
+        }
+        &_margin-right {
+            margin-right: 10px;
+        }
+        &_margin-bottom {
+            margin-bottom: 9.5px;
+            @media (min-width: $width-breakpoint) {
+                margin-bottom: 9.9px;
+            }
+        }
+        &_margin-bottom-320 {
+            margin-bottom: 9.5px;
+            @media (min-width: $width-breakpoint) {
+                margin-bottom: 0;
+            }
+        }
+        &_margin-bottom-720 {
+            margin-bottom: 0;
+            @media (min-width: $width-breakpoint) {
+                margin-bottom: 9.5px;
+            }
+        }
+    }
+    &_reverse {
+        flex-flow: row-reverse;
+    }
+}

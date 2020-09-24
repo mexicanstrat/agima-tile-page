@@ -1,0 +1,35 @@
+.b-questionnaire {
+    font-family: $noto-sans-font;
+    font-size: 14.6px;
+    display: block;
+    overflow: hidden;
+    height: 100.1%;
+    padding: 17px 14px;
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 31px;
+        &_margin {
+            margin-bottom: 25px
+        }
+    }
+    &__border-line {
+        border-bottom: 1px dashed #000000;
+        width: 100%;
+        margin-bottom: 4px;
+    }
+    &__text {
+        &_left {
+            text-align: end;
+            padding-left: 10px;
+        }
+        &_right {
+            text-align: start;
+            padding-right: 10px;
+        }
+        &_no-wrap {
+            white-space: nowrap;
+            align-self: flex-end;
+        }
+    }
+}
